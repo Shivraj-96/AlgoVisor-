@@ -1,0 +1,4 @@
+{
+  "time_complexity": "O(n^2)",
+  "space_complexity": "O(n)"
+}
