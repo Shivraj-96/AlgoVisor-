@@ -1,17 +1,17 @@
 {
   "name": "mini-project",
   "version": "1.0.0",
-  "type": "module",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon model.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@google/genai": "^0.7.0",
+    "@google/generative-ai": "^0.24.1",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "g": "^2.0.1",
     "nodemon": "^3.1.9"

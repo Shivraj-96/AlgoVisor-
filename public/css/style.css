@@ -1,0 +1,166 @@
+/* General improvements */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.visualization {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    min-height: 120px;
+    background: #f0f4fa;
+    border-radius: 12px;
+    transition: background 0.3s;
+    overflow-x: auto;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.3rem;
+}
+
+.block {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #4f8cff 60%, #a6d1ff 100%);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.15);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.block.highlight {
+    background: linear-gradient(135deg, #ffb347 60%, #ffcc80 100%);
+    color: #222;
+    transform: scale(1.15) rotate(-3deg);
+    box-shadow: 0 4px 16px rgba(255,179,71,0.18);
+}
+
+#darkMode {
+    transition: filter 0.3s;
+}
+
+#darkMode:hover {
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+/* Dark mode styles */
+
+
+/* ...existing code... */
+body.dark-theme {
+  background-color: #232323 !important;
+  color: #f1f1f1;
+}
+/* ...existing code... */
+
+body.dark-theme .card {
+    background: #23293a;
+    color: #e3eafc;
+}
+
+
+body.dark-theme .visualization {
+  background: #23293a !important;
+}
+
+body.dark-theme #customOutput,
+body.dark-theme .form-control,
+body.dark-theme .form-select {
+  background: #23293a !important;
+  color: #e3eafc !important;
+  border-color: #4f8cff;
+}
+body.dark-theme .btn-outline-secondary {
+    background: #fff !important;
+    color: #232323 !important;
+    border-color: #fff !important;
+}
+
+body.dark-theme .block {
+    background: linear-gradient(135deg, #1e90ff 60%, #4f8cff 100%);
+    color: #fff;
+}
+
+body.dark-theme .block.highlight {
+    background: linear-gradient(135deg, #ffd580 60%, #ffb347 100%);
+    color: #222;
+}
+
+body.dark-theme .form-control,
+body.dark-theme .form-select {
+    background: #23293a;
+    color: #e3eafc;
+    border-color: #4f8cff;
+}
+
+body.dark-theme .btn-primary,
+body.dark-theme .btn-success,
+body.dark-theme .btn-warning {
+    color: #fff;
+}
+
+footer.bg-primary {
+    background: #4f8cff !important;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .visualization {
+        min-height: 80px;
+        gap: 0.5rem;
+    }
+    .block {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .visualization {
+        min-height: 60px;
+        gap: 0.3rem;
+    }
+    .block {
+        width: 24px;
+        height: 24px;
+        font-size: 0.9rem;
+    }
+}
+.visualization {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    gap: 1rem;
+    min-height: 180px;
+    background: #f0f4fa;
+    border-radius: 12px;
+    transition: background 0.3s;
+    overflow-x: auto;
+}
+
+.GetO{
+    margin-left:33rem;
+}
